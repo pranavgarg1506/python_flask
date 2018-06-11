@@ -1,0 +1,58 @@
+<html>
+
+	<head>
+		<title></title>
+	</head>
+
+<body>
+	<script type="text/javascript"> 
+		
+		var person = window.prompt("Please enter your name", "");
+		var greet = person.slice(0,3);
+		var flag = 0;
+
+		if (greet.toLowerCase()=='mrs' || greet.toLowerCase()=='mr ')
+		{
+			var age = window.prompt("Please enter your age", "");
+
+			var question;
+			var marks = 0;
+			var right = 0;
+			question = window.prompt('CAPITAL OF INDIA','');
+			if(question.toLowerCase()=='delhi') {
+				marks = marks + 5
+				right = right + 1
+			}
+			else {
+				marks = marks - 5
+			}
+
+			question = window.prompt('2+2=','');
+			if(question.toLowerCase()=='4') {
+				marks = marks + 5
+				right = right + 1
+			}
+			else {
+				marks = marks - 5
+			}
+
+		document.write("<br>NAME:-  "+person)
+		document.write("<br>AGE:-  "+age)
+
+		document.write("<br>CORRECT ANSWERS ARE:-  "+right)	
+		document.write("<br>MARKS ARE:-  "+marks)
+			
+		}
+		else
+		{ 
+			 alert('INVALID CHOICE');
+		}	
+		
+		
+
+		                       
+	</script>
+
+</body>
+
+</html>
