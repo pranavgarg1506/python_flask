@@ -7,7 +7,7 @@ app=Flask(__name__)
 app1=Flask(__name__)
 
 
-page = '''<h1> lol </h1>'''
+page222 = '''<h1> lol </h1>'''
 page1 = '''<h1> hiiii </h1>'''
 
 
@@ -18,9 +18,8 @@ page1 = '''<h1> hiiii </h1>'''
 @app.route('/')
 
 # below function is under the app object and only one function can be defined under one object
-def webpage():
-	print('hhhhhhhhhhhhhhh') # wont work
-	return page
+def webpage():	
+	return page222
 
 
 
@@ -43,6 +42,10 @@ def cal():
 def list1():
 	list1 = ['1','2']
 	return list1[0]
+
+@app.route('/quiz')
+def page():
+	return render_template('quiz.html')
 
 
 
